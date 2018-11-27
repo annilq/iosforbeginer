@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "third"; ObjectID = "6n6-B1-JJL"; */
+"6n6-B1-JJL.text" = "标签三";
+
+/* Class = "UILabel"; text = "second"; ObjectID = "BzF-cX-qyg"; */
+"BzF-cX-qyg.text" = "标签二";
+
+/* Class = "UILabel"; text = "fourth"; ObjectID = "ZOP-Qy-5ow"; */
+"ZOP-Qy-5ow.text" = "标签四";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZhV-RS-7v6"; */
+"ZhV-RS-7v6.text" = "标签";
+
+/* Class = "UILabel"; text = "fifth"; ObjectID = "dLt-Ik-Nb4"; */
+"dLt-Ik-Nb4.text" = "标签五";
+
+/* Class = "UILabel"; text = "first"; ObjectID = "eAP-Tl-apz"; */
+"eAP-Tl-apz.text" = "标签一";

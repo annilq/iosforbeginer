@@ -1,0 +1,15 @@
+/* the number 5 */
+"LABEL_FIFTH" = "第五";
+
+/* the number 4 */
+"LABEL_FOURTH" = "第四";
+
+/* the number 1 */
+"LABEL_ONE" = "第一";
+
+/* the number 3 */
+"LABEL_THIRD" = "第三";
+
+/* the number 2 */
+"LABEL_TWO" = "第二";
+
