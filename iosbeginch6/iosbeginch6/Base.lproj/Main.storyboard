@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,8 +57,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="xJ5-mn-j6k" firstAttribute="centerX" secondItem="P94-tM-UFk" secondAttribute="centerX" id="B0E-R1-PPQ"/>
-                            <constraint firstItem="xJ5-mn-j6k" firstAttribute="centerY" secondItem="P94-tM-UFk" secondAttribute="centerY" id="JqI-cN-Pfm"/>
+                            <constraint firstItem="xJ5-mn-j6k" firstAttribute="centerX" secondItem="P94-tM-UFk" secondAttribute="centerX" id="QzY-Oq-VTQ"/>
+                            <constraint firstItem="xJ5-mn-j6k" firstAttribute="centerY" secondItem="P94-tM-UFk" secondAttribute="centerY" id="rxd-wC-c35"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S7C-0p-IaG"/>
                     </view>
@@ -85,8 +85,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gB7-fM-EwG" firstAttribute="centerY" secondItem="zuj-Gd-E5U" secondAttribute="centerY" id="Hbz-Rq-f3Q"/>
-                            <constraint firstItem="gB7-fM-EwG" firstAttribute="centerX" secondItem="zuj-Gd-E5U" secondAttribute="centerX" id="bxX-5m-sGm"/>
+                            <constraint firstItem="gB7-fM-EwG" firstAttribute="centerY" secondItem="zuj-Gd-E5U" secondAttribute="centerY" id="OAd-M1-KLp"/>
+                            <constraint firstItem="gB7-fM-EwG" firstAttribute="centerX" secondItem="zuj-Gd-E5U" secondAttribute="centerX" id="uZj-sj-rBc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bro-Gt-0iW"/>
                     </view>

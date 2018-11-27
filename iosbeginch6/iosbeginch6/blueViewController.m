@@ -29,7 +29,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear: animated];
+    self.view.frame=self.parentViewController.view.bounds;
+}
 /*
 #pragma mark - Navigation
 

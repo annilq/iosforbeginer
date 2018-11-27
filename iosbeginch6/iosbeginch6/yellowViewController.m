@@ -28,8 +28,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeRotate:) name:UIApplicationDidChangeStatusBarFrameNotification object:nil];
 }
-
+- (void)changeRotate:(NSNotification*)noti {
+    if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationPortrait
+        || [[UIDevice currentDevice] orientation] == UIInterfaceOrientationPortraitUpsideDown) {
+        //竖屏
+        NSLog(@"竖屏");
+    } else {
+        //横屏
+        NSLog(@"横屏");
+    }    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear: animated];
+    self.view.frame=self.parentViewController.view.bounds;
+}
 /*
 #pragma mark - Navigation
 

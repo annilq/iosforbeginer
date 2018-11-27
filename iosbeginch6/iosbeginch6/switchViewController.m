@@ -24,15 +24,25 @@
             self.yellowcon=[self.storyboard instantiateViewControllerWithIdentifier:@"Yellow"];
         }
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:false];
+        [self.bluecon willMoveToParentViewController:nil];
         [self.bluecon.view removeFromSuperview];
-        [self.view  insertSubview:self.yellowcon.view atIndex:0];
+        [self.bluecon removeFromParentViewController];
+        
+        
+        [self addChildViewController:self.yellowcon];
+        [self.yellowcon didMoveToParentViewController:self];
+        [self.view insertSubview:self.yellowcon.view atIndex:0];
     }else{
         if(!self.bluecon){
             self.bluecon=[self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
         }
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:false];
-
+        [self.yellowcon willMoveToParentViewController:nil];
         [self.yellowcon.view removeFromSuperview];
+        [self.yellowcon removeFromParentViewController];
+        
+        [self addChildViewController:self.bluecon];
+        [self.bluecon didMoveToParentViewController:self];
         [self.view insertSubview:self.bluecon.view atIndex:0];
     }
     [UIView commitAnimations];
@@ -40,8 +50,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.bluecon=[self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
+    [self addChildViewController:self.bluecon];
+    //addChildViewController 会调用 [child willMoveToParentViewController:self] 方法，但是不会调用 didMoveToParentViewController:方法，官方建议显示调用
+    [self.bluecon didMoveToParentViewController:self];
     [self.view insertSubview:self.bluecon.view atIndex:0];
-    // Do any additional setup after loading the view.
 }
 -(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
